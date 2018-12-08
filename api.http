@@ -1,0 +1,31 @@
+@endpoint = http://localhost:3000
+
+#### Transaction ####
+#### Post a transaction
+POST {{endpoint}}/transaction
+Content-type: application/json
+
+{
+  "from": "acc1",
+  "to": "acc2",
+  "value": 5
+}
+
+#### Get transaction by hash
+GET {{endpoint}}/transaction/0x6f9ef71c1bef53e623c22dbb25a43cb78b9a32120a8db0fc4fdcf6f9040234db
+
+
+#### Block ####
+#### Get block height
+GET {{endpoint}}/block
+
+#### Get block info by height
+GET {{endpoint}}/block/height/2
+
+#### Get block info by blockhash
+GET {{endpoint}}/block/hash/0xb49437410bd457d6b680b0cb8f609163f00429200e614e12a6e0d9b6dbbb1f0c
+
+
+#### Address ####
+#### Get address info
+GET {{endpoint}}/address/acc1
