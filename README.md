@@ -50,7 +50,9 @@ curl -X GET "localhost:3000/transaction/0x4f7d1b75053426c78e6a51a0ebae18f805d61e
 
 #### Address
 1. Get address info. A GET request with `address` parameter.
+```
 curl -X GET localhost:3000/address/acc1
+```
 
 #### Block
 1. Get current blockchain height. A GET request.
