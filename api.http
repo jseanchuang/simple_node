@@ -7,7 +7,7 @@ Content-type: application/json
 
 {
   "from": "acc1",
-  "to": "acc2",
+  "to": "acc4",
   "value": 5
 }
 

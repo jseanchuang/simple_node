@@ -1,16 +1,21 @@
 const blocks = require('./blocks.js');
 const txPool = require('./txPool.js');
 
-const MINING_INTERVAL = 10000 // 10 sec.
+const MINING_INTERVAL = 5000 // 10 sec.
+const NONCE_CALCULATION = true;
 class Core {
   start() {
     this.mineminemine = setInterval(() => {
       console.log('==========  Mining Start  ==========');
       const txs = txPool.popAll();
-      // Mint to block
-      blocks.update(txs);
+      if (NONCE_CALCULATION) {
+        blocks.miningWithNonceCalculation(txs);
+      } else {
+        blocks.miningWithFixedNonce(txs);
+      }
       console.log('==========  Mining Finish  ==========');
     }, MINING_INTERVAL);
+
   }
 
   stop() {

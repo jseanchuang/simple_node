@@ -22,7 +22,8 @@ class TxPool {
     let tx = {
       from: input.from,
       to: input.to,
-      value: input.value
+      value: input.value,
+      timestamp: new Date().getTime()
     }
     if (!blocks.balanceCheck(tx.from, tx.value)) throw new Error('Insufficient balance');
     if (this.addresses.indexOf(tx.from) > -1) throw new Error('Duplicate transaction in pending pool');
