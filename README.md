@@ -2,6 +2,8 @@
 
  It's a single node blockchain demonstration. Without network or p2p connections, also no signature or verification. All blockchain data store in memory. The consensus would be straightforward: just collect transactions and make them blocks.
 
+ 
+
 ## SPECIFICATION
 - [x] It is an account based blockchain.
 - [x] Newly observed accounts have 100 units of initial coins.
