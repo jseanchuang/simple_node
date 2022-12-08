@@ -10,9 +10,9 @@
   "author": "seanchuang",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.20.1",
     "cookie-parser": "^1.4.3",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "helmet": "^3.15.0",
     "http": "0.0.0",
     "merkle": "^0.6.0",
